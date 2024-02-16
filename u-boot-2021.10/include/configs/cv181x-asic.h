@@ -290,7 +290,6 @@
 					"console=$consoledev,$baudrate $othbootargs;"
 
 	#define SD_BOOTM_COMMAND \
-				SET_BOOTARGS \
 				"echo Boot from SD ...;" \
 				"mmc dev 0 && fatload mmc 0 ${uImage_addr} boot.sd; " \
 				"if test $? -eq 0; then " \
